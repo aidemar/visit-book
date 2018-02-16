@@ -25,9 +25,10 @@
       <div class="row">
         <div class="col-sm-12">
           <h2>Comentarios pasados</h2>
-          <p class="text-container">Aquí va un comentario</p>
+          <div class="comment-area">
+
+          </div>
           <hr>
-          <p>Aquí va otro comentario</p>
           <hr>
         </div>
       </div>
@@ -43,17 +44,15 @@
 
     <section class="nav-bar">
       <div class="row">
-        <div class="col-sm-12">
-          <ul class="options-bar text-center">
-    				<li><a href="#">Large</a></li>
-    				<li><a href="#">Medium</a></li>
-    				<li><a href="#">Small</a></li>
-    				<li><a href="#">Color de texto</a></li>
-    				<li><a href="#">Color de fondo</a></li>
-    				<li><a href="#">Izquierda</a></li>
-            <li><a href="#">Centrar</a></li>
-            <li><a href="#">Derecha</a></li>
-    			</ul>
+        <div class="col-sm-12 text-center">
+          <button type="button" id="change-to-large" name="button">Large</button>
+          <button type="button" id="change-to-medium" name="button">Medium</button>
+          <button type="button" id="change-to-small" name="button">Small</button>
+          <button type="button" id="change-text-color"  name="button">Color de texto</button>
+          <button type="button" id="change-background-color" name="button">Color de fondo</button>
+          <button type="button" id="left-align" name="button">Izquierda</button>
+          <button type="button" id="center-align" name="button">Centrar</button>
+          <button type="button" id="right-align" name="button">Derecha</button>
         </div>
       </div>
     </section>
@@ -61,22 +60,31 @@
     <section>
       <div class="row">
         <div class="col-sm-12 text-center">
-          <input class="text-input" type="text" name="" value="">
+          <textarea id="text-input"name="name" rows="8" cols="80"></textarea>
         </div>
       </div>
     </section>
 
-    <section class="preview">
+    <section class="preview-section">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h2>Así se vería tu comentario</h2>
-          <p>Comentario</p>
-          <button type="button" name="button">Enviar comentario</button>
+          <div id="preview">
+            <!-- Aquí aparecerá la vista previa del comentario -->
+          </div>
+          <button id="add-text" type="button" name="button">Enviar comentario</button>
         </div>
       </div>
     </section>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="js/app.js"></script>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+      <script src="js/app.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
   </body>
 </html>
